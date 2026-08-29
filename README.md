@@ -133,6 +133,29 @@ This repository is being established per CR-WSF-17 Rev.1. Initial concept defini
 8. [Provenance](./concepts/provenance.md)
 9. [Authority](./concepts/authority.md)
 
+**Initial 16 Tier 3 Specialisation Concepts** (all status: Baseline):
+
+1. [Role](./concepts/role.md)
+2. [Process](./concepts/process.md)
+3. [Function](./concepts/function.md)
+4. [Activity](./concepts/activity.md)
+5. [Outcome](./concepts/outcome.md)
+6. [Resource](./concepts/resource.md)
+7. [System](./concepts/system.md)
+8. [Organisation](./concepts/organisation.md)
+9. [Service](./concepts/service.md)
+10. [Goal](./concepts/goal.md)
+11. [Policy](./concepts/policy.md)
+12. [Rule](./concepts/rule.md)
+13. [Constraint](./concepts/constraint.md)
+14. [Objective](./concepts/objective.md)
+15. [Measure](./concepts/measure.md)
+16. [Actor](./concepts/actor.md)
+
+**Tier 3 Worked Example**:
+
+- [Capability](./concepts/capability.md) : Tier 3 derived example grounded in Disposition
+
 ---
 
 ## How to Contribute
