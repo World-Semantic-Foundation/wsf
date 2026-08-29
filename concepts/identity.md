@@ -54,11 +54,11 @@ WSF recognizes that "Identity" can mean different things. This ADR governs the b
 
 Identity is foundational because:
 
-1. **Reference requires distinguishability** — to say "OTCHERE Inc", one must be able to distinguish it.
-2. **Assertions require stable subjects** — "OTCHERE possesses Capability X" requires stable identity of OTCHERE.
-3. **Evolution requires persistence** — concepts evolve while maintaining identity (per ADR-WSF-16).
-4. **Integration requires resolution** — cross-system references resolve to identities.
-5. **Provenance requires attribution** — provenance links assertions to their origin (requires identity).
+1. **Reference requires distinguishability** : to say "OTCHERE Inc", one must be able to distinguish it.
+2. **Assertions require stable subjects** : "OTCHERE possesses Capability X" requires stable identity of OTCHERE.
+3. **Evolution requires persistence** : concepts evolve while maintaining identity (per ADR-WSF-16).
+4. **Integration requires resolution** : cross-system references resolve to identities.
+5. **Provenance requires attribution** : provenance links assertions to their origin (requires identity).
 
 Without Identity, semantic claims become unanchored.
 
@@ -70,13 +70,13 @@ WSF distinguishes the following identity dimensions:
 
 ### 1. Identity by Meaning
 
-The core identity for Concepts — a Concept is identified by what it means.
+The core identity for Concepts ; a Concept is identified by what it means.
 
 Example: `wsf:Capability` is identified as "the concept of grounded potential".
 
 ### 2. Identity by Stable Reference
 
-The core identity for Entities — an Entity is identified by a stable reference (e.g., a persistent identifier).
+The core identity for Entities ; an Entity is identified by a stable reference (e.g., a persistent identifier).
 
 Example: `OTCHERE Inc` is identified by registration, name, or assigned ID.
 
@@ -279,19 +279,19 @@ Without identity, assertions cannot be unambiguously made.
 
 ## Related Concepts
 
-- [Entity](./entity.md) — The concrete things that have identity
-- [Concept](./concept.md) — The abstract ideas that have identity
-- [Capability](./capability.md) — A concept with identity
-- [Disposition](./disposition.md) — Identity of tendencies/potentials
+- [Entity](./entity.md) : The concrete things that have identity
+- [Concept](./concept.md) : The abstract ideas that have identity
+- [Capability](./capability.md) : A concept with identity
+- [Disposition](./disposition.md) : Identity of tendencies/potentials
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-18 — Concept Identity (the application of Identity to concepts)
-- ADR-WSF-10 — Semantic Identity & Naming
-- ADR-WSF-16 — Semantic Evolution & Versioning
-- ADR-WSF-21 — Namespace and Reference Model (forthcoming)
+- ADR-WSF-18 : Concept Identity (the application of Identity to concepts)
+- ADR-WSF-10 : Semantic Identity & Naming
+- ADR-WSF-16 : Semantic Evolution & Versioning
+- ADR-WSF-21 : Namespace and Reference Model (forthcoming)
 
 ---
 

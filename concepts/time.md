@@ -1,6 +1,6 @@
 # Time
 
-> **The semantic dimension of temporal location and sequence — instants, intervals, durations, and the relationships between them.**
+> **The semantic dimension of temporal location and sequence ; instants, intervals, durations, and the relationships between them.**
 
 ---
 
@@ -21,7 +21,7 @@ authority: WSF
 
 ## Definition
 
-**Time** is the semantic dimension of temporal location and sequence — instants, intervals, durations, and the relationships between them.
+**Time** is the semantic dimension of temporal location and sequence ; instants, intervals, durations, and the relationships between them.
 
 Time is NOT:
 - A physical quantity alone (time has semantic structure beyond measurement);
@@ -40,12 +40,12 @@ Time IS:
 
 Time is foundational because:
 
-1. **Events occur in time** — without time, no events;
-2. **States hold over time** — without time, no persistence;
-3. **Causality operates in time** — causes precede effects;
-4. **Assertions have temporal validity** — assertions may be time-bounded;
-5. **History requires time** — without time, no record;
-6. **Process and workflow happen over time** — without time, no sequence.
+1. **Events occur in time** : without time, no events;
+2. **States hold over time** : without time, no persistence;
+3. **Causality operates in time** : causes precede effects;
+4. **Assertions have temporal validity** : assertions may be time-bounded;
+5. **History requires time** : without time, no record;
+6. **Process and workflow happen over time** : without time, no sequence.
 
 Without Time, the architecture cannot model change, persistence, or history.
 
@@ -326,18 +326,18 @@ A before B does NOT imply A causes B.
 
 ## Related Concepts
 
-- [Event](./event.md) — Events occur in time
-- [State](./state.md) — States hold over time
-- [Assertion](./assertion.md) — Assertions have temporal validity
-- [Space](./space.md) — Space is the spatial dimension (parallel to time)
+- [Event](./event.md) : Events occur in time
+- [State](./state.md) : States hold over time
+- [Assertion](./assertion.md) : Assertions have temporal validity
+- [Space](./space.md) : Space is the spatial dimension (parallel to time)
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-09 — Foundational Concept Taxonomy
-- ADR-WSF-19 — Semantic Relationship Model (temporal relationships)
-- ADR-WSF-22 — Assertion and Provenance Model (temporal validity)
+- ADR-WSF-09 : Foundational Concept Taxonomy
+- ADR-WSF-19 : Semantic Relationship Model (temporal relationships)
+- ADR-WSF-22 : Assertion and Provenance Model (temporal validity)
 
 ---
 

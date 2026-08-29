@@ -1,6 +1,6 @@
 # Space
 
-> **The semantic dimension of spatial location and arrangement — positions, regions, containment, and the relationships between them.**
+> **The semantic dimension of spatial location and arrangement ; positions, regions, containment, and the relationships between them.**
 
 ---
 
@@ -21,7 +21,7 @@ authority: WSF
 
 ## Definition
 
-**Space** is the semantic dimension of spatial location and arrangement — positions, regions, containment, and the relationships between them.
+**Space** is the semantic dimension of spatial location and arrangement ; positions, regions, containment, and the relationships between them.
 
 Space is NOT:
 - A physical quantity alone;
@@ -40,11 +40,11 @@ Space IS:
 
 Space is foundational because:
 
-1. **Entities are located in space** — without space, no location;
-2. **Events occur in space** — without space, events are placeless;
-3. **Resources occupy space** — without space, no resource allocation;
-4. **Systems have spatial extent** — without space, no architecture;
-5. **Integration has spatial implications** — without space, no physical integration.
+1. **Entities are located in space** : without space, no location;
+2. **Events occur in space** : without space, events are placeless;
+3. **Resources occupy space** : without space, no resource allocation;
+4. **Systems have spatial extent** : without space, no architecture;
+5. **Integration has spatial implications** : without space, no physical integration.
 
 Without Space, the architecture cannot model location, arrangement, or geography.
 
@@ -389,18 +389,18 @@ Each has its own conventions.
 
 ## Related Concepts
 
-- [Entity](./entity.md) — Entities located in space
-- [Event](./event.md) — Events occur in space
-- [Time](./time.md) — Time is the temporal dimension (parallel to space)
-- [Context](./context.md) — Contexts may have spatial scope
+- [Entity](./entity.md) : Entities located in space
+- [Event](./event.md) : Events occur in space
+- [Time](./time.md) : Time is the temporal dimension (parallel to space)
+- [Context](./context.md) : Contexts may have spatial scope
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-09 — Foundational Concept Taxonomy
-- ADR-WSF-19 — Semantic Relationship Model (spatial relationships)
-- ADR-WSF-22 — Assertion and Provenance Model (spatial validity)
+- ADR-WSF-09 : Foundational Concept Taxonomy
+- ADR-WSF-19 : Semantic Relationship Model (spatial relationships)
+- ADR-WSF-22 : Assertion and Provenance Model (spatial validity)
 
 ---
 

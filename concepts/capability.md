@@ -1,6 +1,6 @@
 # Capability
 
-> **A grounded potential of an Entity to accomplish a defined kind of effect — a specialized form of Disposition.**
+> **A grounded potential of an Entity to accomplish a defined kind of effect ; a specialized form of Disposition.**
 
 ---
 
@@ -184,25 +184,25 @@ WSF Capability
     └── ...
 ```
 
-Specialization must preserve Capability semantics (per ADR-WSF-04 — Semantic Inheritance).
+Specialization must preserve Capability semantics (per ADR-WSF-04 ; Semantic Inheritance).
 
 ---
 
 ## Related Concepts
 
-- **Disposition** (wsf:Disposition) — Parent category
-- **Capacity** (wsf:Capacity) — One grounding dimension
-- **Ability** (wsf:Ability) — Other grounding dimension
-- **Function** (wsf:Function) — What capability enables
-- **Entity** (wsf:Entity) — Bearer of capability
-- **Role** (wsf:Role) — Contextual attribution
+- **Disposition** (wsf:Disposition) : Parent category
+- **Capacity** (wsf:Capacity) : One grounding dimension
+- **Ability** (wsf:Ability) : Other grounding dimension
+- **Function** (wsf:Function) : What capability enables
+- **Entity** (wsf:Entity) : Bearer of capability
+- **Role** (wsf:Role) : Contextual attribution
 
 ---
 
 ## Cross-References
 
-- ADR-WSF-07: Capacity–Ability–Capability (parent)
-- Investigation 1: Capability–Ability–Capacity (foundation)
+- ADR-WSF-07: Capacity:Ability:Capability (parent)
+- Investigation 1: Capability:Ability:Capacity (foundation)
 - Investigation 4: Ontological Classification (Capability is not free-floating primitive)
 - Investigation 7: Existence-Occurrence (Disposition grounding)
 - ADR-WSF-04: Semantic Inheritance (specialization rules)

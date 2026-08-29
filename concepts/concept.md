@@ -1,6 +1,6 @@
 # Concept
 
-> **A unit of semantic meaning — a distinguishable abstract idea that can participate in semantic definitions, specializations, and assertions.**
+> **A unit of semantic meaning ; a distinguishable abstract idea that can participate in semantic definitions, specializations, and assertions.**
 
 ---
 
@@ -21,7 +21,7 @@ authority: WSF
 
 ## Definition
 
-A **Concept** is a unit of semantic meaning — an abstract idea that can be defined, referenced, specialized, and used in semantic assertions.
+A **Concept** is a unit of semantic meaning ; an abstract idea that can be defined, referenced, specialized, and used in semantic assertions.
 
 A Concept is NOT:
 - A specific concrete thing (use `wsf:Entity` for that);
@@ -60,10 +60,10 @@ These are concepts. They are NOT:
 
 Concept is foundational because:
 
-1. **Semantic assertions are about concepts** — "OTCHERE possesses Capability" uses the concept Capability.
-2. **Specialization operates on concepts** — Business Capability specializes Capability.
-3. **Definitions describe concepts** — a definition defines what a concept means.
-4. **Cross-system reference requires shared concepts** — integration requires shared concept identity.
+1. **Semantic assertions are about concepts** : "OTCHERE possesses Capability" uses the concept Capability.
+2. **Specialization operates on concepts** : Business Capability specializes Capability.
+3. **Definitions describe concepts** : a definition defines what a concept means.
+4. **Cross-system reference requires shared concepts** : integration requires shared concept identity.
 
 Without Concept as a foundational type, the architecture cannot talk about meaning, only about data structures.
 
@@ -193,20 +193,20 @@ The relationship and object are **Concepts**, not specific entities. This is wha
 
 ## Related Concepts
 
-- [Entity](./entity.md) — Concrete things that participate in assertions
-- [Relationship](./relationship.md) — How concepts connect
-- [Identity](./identity.md) — Stable identification
-- [Capability](./capability.md) — Example of a Tier 3 concept
-- [Disposition](./disposition.md) — Concepts of tendency/potential
+- [Entity](./entity.md) : Concrete things that participate in assertions
+- [Relationship](./relationship.md) : How concepts connect
+- [Identity](./identity.md) : Stable identification
+- [Capability](./capability.md) : Example of a Tier 3 concept
+- [Disposition](./disposition.md) : Concepts of tendency/potential
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-18 — Concept Identity (this concept has a stable identity)
-- ADR-WSF-09 — Foundational Concept Taxonomy
-- ADR-WSF-11 — Semantic Concept Specification
-- ADR-WSF-12 — Semantic Assertion Model
+- ADR-WSF-18 : Concept Identity (this concept has a stable identity)
+- ADR-WSF-09 : Foundational Concept Taxonomy
+- ADR-WSF-11 : Semantic Concept Specification
+- ADR-WSF-12 : Semantic Assertion Model
 
 ---
 

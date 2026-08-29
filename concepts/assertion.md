@@ -43,12 +43,12 @@ An Assertion IS:
 
 Assertion is foundational because:
 
-1. **Semantic claims are assertions** — every semantic claim is an assertion;
-2. **Provenance requires assertions** — provenance tracks assertions;
-3. **Evidence supports assertions** — evidence is attached to assertions;
-4. **Validation operates on assertions** — assertions can be validated;
-5. **Trust is assessed on assertions** — trust is per-assertion;
-6. **Conflicts are detected between assertions** — multiple assertions can be compared.
+1. **Semantic claims are assertions** : every semantic claim is an assertion;
+2. **Provenance requires assertions** : provenance tracks assertions;
+3. **Evidence supports assertions** : evidence is attached to assertions;
+4. **Validation operates on assertions** : assertions can be validated;
+5. **Trust is assessed on assertions** : trust is per-assertion;
+6. **Conflicts are detected between assertions** : multiple assertions can be compared.
 
 Without Assertion, the architecture cannot attribute, validate, or trust semantic claims.
 
@@ -134,7 +134,7 @@ Proposed → Active → Confirmed | Disputed | Rejected | Expired | Superseded |
 
 | State | Meaning | Governance |
 |---|---|---|
-| **Proposed** | Newly asserted | Initial state — not yet confirmed |
+| **Proposed** | Newly asserted | Initial state ; not yet confirmed |
 | **Active** | Currently in force | Valid in current context |
 | **Confirmed** | Independently verified | Has confirming evidence |
 | **Disputed** | Contested | Has contradicting evidence |
@@ -341,20 +341,20 @@ Withdrawn assertions are preserved for history.
 
 ## Related Concepts
 
-- [Proposition](./proposition.md) — What is asserted
-- [Concept](./concept.md) — Concepts participate in assertions
-- [Entity](./entity.md) — Things that participate in assertions
-- [Relationship](./relationship.md) — How things connect in assertions
-- [Context](./context.md) — Where assertions apply
+- [Proposition](./proposition.md) : What is asserted
+- [Concept](./concept.md) : Concepts participate in assertions
+- [Entity](./entity.md) : Things that participate in assertions
+- [Relationship](./relationship.md) : How things connect in assertions
+- [Context](./context.md) : Where assertions apply
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-05 — Semantic Assertion
-- ADR-WSF-06 — Evidence & Provenance
-- ADR-WSF-12 — Semantic Assertion Model
-- ADR-WSF-22 — Assertion and Provenance Model
+- ADR-WSF-05 : Semantic Assertion
+- ADR-WSF-06 : Evidence & Provenance
+- ADR-WSF-12 : Semantic Assertion Model
+- ADR-WSF-22 : Assertion and Provenance Model
 
 ---
 

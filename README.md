@@ -25,7 +25,7 @@ wsf/
 
 ## What Lives Here
 
-### `concepts/` — Foundational Concept Definitions
+### `concepts/` ; Foundational Concept Definitions
 
 The 12 Tier 1 foundational concepts and 9 Tier 2 supporting constructs. Each concept has:
 - Unique Semantic Identity (URI)
@@ -37,31 +37,31 @@ The 12 Tier 1 foundational concepts and 9 Tier 2 supporting constructs. Each con
 - Scope and Context considerations
 - Canonical examples (OTCHERE/Kwesi)
 
-### `relationships/` — Foundational Relationships
+### `relationships/` ; Foundational Relationships
 
 The 4 Forms of Relation (Structural / Temporal / Causal / Dispositional) plus the 10 relationship families (Identity, Possession, Participation, Realization, Enablement, Provision, Constraint, Measurement, Causality, Context).
 
-### `identity/` — Identity/Reference/Representation
+### `identity/` ; Identity/Reference/Representation
 
 Distinguishes Identity, Identifier, Name, Reference, Representation. Implements the 5 distinctions from Investigation 6.
 
-### `assertions/` — Semantic Assertion Model
+### `assertions/` ; Semantic Assertion Model
 
 The Subject + Relationship + Object + Context + Time + Space + Condition + Evidence + Provenance + Trust pattern. See ADR-WSF-12.
 
-### `context/` — Context as Semantic Qualification
+### `context/` ; Context as Semantic Qualification
 
-Context qualifies meaning, applicability, interpretation — not a generic metadata container.
+Context qualifies meaning, applicability, interpretation ; not a generic metadata container.
 
-### `temporal/` — Time Semantics
+### `temporal/` ; Time Semantics
 
 Instant, Interval, Duration. Precedence ≠ Causality. Temporal Validity ≠ Lifecycle.
 
-### `spatial/` — Space Semantics
+### `spatial/` ; Space Semantics
 
 Location, Position, Spatial Region. Position ≠ Location.
 
-### `provenance/` — Evidence, Provenance, Authority, Trust
+### `provenance/` ; Evidence, Provenance, Authority, Trust
 
 The 4 epistemic qualifiers for assertions.
 
@@ -73,7 +73,7 @@ The 4 epistemic qualifiers for assertions.
 
 - **Files**: `kebab-case.md` for documents, `snake_case.yaml` for machine-readable
 - **Concepts**: PascalCase for the canonical name, lowercase for files
-- **Examples**: Always OTCHERE Inc (or OTCHERE) and Kwesi — never ACME
+- **Examples**: Always OTCHERE Inc (or OTCHERE) and Kwesi : never ACME
 
 ### Frontmatter
 
@@ -145,13 +145,13 @@ This repository is being established per CR-WSF-17 Rev.1. Initial concept defini
 
 ## Related Repositories
 
-- [wsf-spec/](../wsf-spec/) — Normative specifications
-- [wsf-governance/](../wsf-governance/) — ADRs, CRs, governance
-- [wsf-examples/](../wsf-examples/) — Reference applications
-- [wsf-software/](../wsf-software/) — Semantic Engine implementation
-- [wsf-docs/](../wsf-docs/) — Conceptual documentation
-- [wsf-connectors/](../wsf-connectors/) — Integration adapters
-- [wsf-visuals/](../wsf-visuals/) — Visual semantic assets
+- [wsf-spec/](../wsf-spec/) : Normative specifications
+- [wsf-governance/](../wsf-governance/) : ADRs, CRs, governance
+- [wsf-examples/](../wsf-examples/) : Reference applications
+- [wsf-software/](../wsf-software/) : Semantic Engine implementation
+- [wsf-docs/](../wsf-docs/) : Conceptual documentation
+- [wsf-connectors/](../wsf-connectors/) : Integration adapters
+- [wsf-visuals/](../wsf-visuals/) : Visual semantic assets
 
 ---
 

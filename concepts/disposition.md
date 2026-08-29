@@ -1,6 +1,6 @@
 # Disposition
 
-> **A tendency, capacity, or potential of an Entity that may manifest under certain conditions — the umbrella concept for Capacity, Ability, Capability, and similar potential-bearing concepts.**
+> **A tendency, capacity, or potential of an Entity that may manifest under certain conditions ; the umbrella concept for Capacity, Ability, Capability, and similar potential-bearing concepts.**
 
 ---
 
@@ -41,12 +41,12 @@ A Disposition IS:
 
 Disposition is foundational because:
 
-1. **Potential is distinct from actual** — many semantic concepts describe potential, not just actuality;
-2. **Capabilities are dispositions** — every Capability is a Disposition specialized;
-3. **Abilities are dispositions** — every Ability is a Disposition;
-4. **Roles are dispositions** — Roles are tendencies to act in certain ways;
-5. **Functions are dispositions** — Functions are intended purposes;
-6. **Action requires disposition** — agents act based on dispositions.
+1. **Potential is distinct from actual** : many semantic concepts describe potential, not just actuality;
+2. **Capabilities are dispositions** : every Capability is a Disposition specialized;
+3. **Abilities are dispositions** : every Ability is a Disposition;
+4. **Roles are dispositions** : Roles are tendencies to act in certain ways;
+5. **Functions are dispositions** : Functions are intended purposes;
+6. **Action requires disposition** : agents act based on dispositions.
 
 Without Disposition, we conflate potential with actuality and lose important distinctions.
 
@@ -58,7 +58,7 @@ WSF distinguishes the following kinds of Disposition:
 
 ### 1. Capacity
 
-The "how much" of potential — the extent or magnitude of something an Entity can sustain or accommodate.
+The "how much" of potential ; the extent or magnitude of something an Entity can sustain or accommodate.
 
 Examples:
 - Processing Capacity: 100,000 orders/day
@@ -70,7 +70,7 @@ Capacity answers: "How much can this Entity accommodate, sustain, or process?"
 
 ### 2. Ability
 
-The "can do" of potential — the competence or disposition to perform.
+The "can do" of potential ; the competence or disposition to perform.
 
 Examples:
 - Processing Ability: Can process orders
@@ -82,7 +82,7 @@ Ability answers: "Can this Entity perform this kind of activity?"
 
 ### 3. Capability
 
-The grounded combination — a potential that combines Capacity and Ability in context.
+The grounded combination ; a potential that combines Capacity and Ability in context.
 
 Examples:
 - Order Fulfillment Capability: Has Capacity for 100,000 orders/day AND Ability to fulfill orders
@@ -464,21 +464,21 @@ The digital twin captures the entity's dispositions.
 
 ## Related Concepts
 
-- [Entity](./entity.md) — Bearers of dispositions
-- [Capability](./capability.md) — A specialized disposition
-- [Role](./role.md) — A relational disposition (forthcoming)
-- [Function](./function.md) — An intended-purpose disposition (forthcoming)
-- [Capacity](./capacity.md) — The "how much" disposition
-- [Ability](./ability.md) — The "can do" disposition
-- [State](./state.md) — Actual condition (distinct from disposition)
+- [Entity](./entity.md) : Bearers of dispositions
+- [Capability](./capability.md) : A specialized disposition
+- [Role](./role.md) : A relational disposition (forthcoming)
+- [Function](./function.md) : An intended-purpose disposition (forthcoming)
+- [Capacity](./capacity.md) : The "how much" disposition
+- [Ability](./ability.md) : The "can do" disposition
+- [State](./state.md) : Actual condition (distinct from disposition)
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-07 — Capacity–Ability–Capability (the original distinction)
-- ADR-WSF-09 — Foundational Concept Taxonomy
-- ADR-WSF-19 — Semantic Relationship Model
+- ADR-WSF-07 : Capacity:Ability:Capability (the original distinction)
+- ADR-WSF-09 : Foundational Concept Taxonomy
+- ADR-WSF-19 : Semantic Relationship Model
 
 ---
 

@@ -1,6 +1,6 @@
 # Proposition
 
-> **A semantic content that can be true, false, or indeterminate — the abstract content of an assertion or belief.**
+> **A semantic content that can be true, false, or indeterminate ; the abstract content of an assertion or belief.**
 
 ---
 
@@ -21,10 +21,10 @@ authority: WSF
 
 ## Definition
 
-A **Proposition** is a semantic content that can be true, false, or indeterminate — the abstract content that an assertion expresses.
+A **Proposition** is a semantic content that can be true, false, or indeterminate ; the abstract content that an assertion expresses.
 
 A Proposition is NOT:
-- An assertion (use Assertion — propositions are what assertions assert);
+- An assertion (use Assertion : propositions are what assertions assert);
 - A sentence (sentences express propositions in language);
 - A belief (beliefs are mental states about propositions);
 - Truth itself (truth is a property of propositions).
@@ -41,11 +41,11 @@ A Proposition IS:
 
 Proposition is foundational because:
 
-1. **Assertions are about propositions** — to assert something is to assert a proposition;
-2. **Truth applies to propositions** — truth is a property of propositions;
-3. **Reasoning operates on propositions** — logical reasoning works on propositions;
-4. **Multiple agents can assert the same proposition** — shared content;
-5. **Propositions can be true independently of being asserted** — reality is independent of claims.
+1. **Assertions are about propositions** : to assert something is to assert a proposition;
+2. **Truth applies to propositions** : truth is a property of propositions;
+3. **Reasoning operates on propositions** : logical reasoning works on propositions;
+4. **Multiple agents can assert the same proposition** : shared content;
+5. **Propositions can be true independently of being asserted** : reality is independent of claims.
 
 Without Proposition, the architecture cannot distinguish "what is asserted" from "the act of asserting".
 
@@ -194,19 +194,19 @@ Propositions are timeless in content; their truth is contingent on reality.
 
 ## Related Concepts
 
-- [Assertion](./assertion.md) — The act of claiming a proposition
-- [Concept](./concept.md) — Concepts participate in propositions
-- [Entity](./entity.md) — Entities participate in propositions
-- [Relationship](./relationship.md) — Relationships form parts of propositions
-- [Context](./context.md) — Context affects proposition interpretation
+- [Assertion](./assertion.md) : The act of claiming a proposition
+- [Concept](./concept.md) : Concepts participate in propositions
+- [Entity](./entity.md) : Entities participate in propositions
+- [Relationship](./relationship.md) : Relationships form parts of propositions
+- [Context](./context.md) : Context affects proposition interpretation
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-05 — Semantic Assertion
-- ADR-WSF-12 — Semantic Assertion Model
-- ADR-WSF-22 — Assertion and Provenance Model
+- ADR-WSF-05 : Semantic Assertion
+- ADR-WSF-12 : Semantic Assertion Model
+- ADR-WSF-22 : Assertion and Provenance Model
 
 ---
 

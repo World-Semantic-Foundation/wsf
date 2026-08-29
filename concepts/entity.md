@@ -1,6 +1,6 @@
 # Entity
 
-> **The foundational concept of existence — what exists, can be identified, and can participate in semantic assertions.**
+> **The foundational concept of existence ; what exists, can be identified, and can participate in semantic assertions.**
 
 ---
 
@@ -42,7 +42,7 @@ An **Entity** is a distinguishable existent that can be identified and about whi
 
 | Concept | Relationship to Entity |
 |---|---|
-| **Entity** | This concept — what exists |
+| **Entity** | This concept ; what exists |
 | **Concept** | A semantic category, NOT an entity |
 | **Identity** | The persistent identifier of an entity |
 | **Identifier** | A concrete representation of identity |
@@ -122,7 +122,7 @@ An **Entity** is a distinguishable existent that can be identified and about whi
 
 ## Constraints
 
-- An Entity MUST have a stable identity (per Principle 4 — Identity Separation)
+- An Entity MUST have a stable identity (per Principle 4 : Identity Separation)
 - An Entity's identity SHOULD be preserved through versioning
 - An Entity's state MUST be qualified temporally
 - An Entity's assertions MUST have provenance
@@ -144,7 +144,7 @@ WSF Entity
     └── ...
 ```
 
-Specialization must preserve Entity semantics (per ADR-WSF-04 — Semantic Inheritance).
+Specialization must preserve Entity semantics (per ADR-WSF-04 ; Semantic Inheritance).
 
 ---
 
@@ -164,12 +164,12 @@ An Entity is classified by a Concept. The Entity IS; the Concept CATEGORIZES.
 
 ## Related Concepts
 
-- **Identity** (wsf:Identity) — Persistent identifier of an Entity
-- **Concept** (wsf:Concept) — Semantic category
-- **State** (wsf:State) — Current condition
-- **Event** (wsf:Event) — Occurrence involving an Entity
-- **Role** (wsf:Role) — Contextual participation
-- **Disposition** (wsf:Disposition) — Potential of an Entity
+- **Identity** (wsf:Identity) : Persistent identifier of an Entity
+- **Concept** (wsf:Concept) : Semantic category
+- **State** (wsf:State) : Current condition
+- **Event** (wsf:Event) : Occurrence involving an Entity
+- **Role** (wsf:Role) : Contextual participation
+- **Disposition** (wsf:Disposition) : Potential of an Entity
 
 ---
 

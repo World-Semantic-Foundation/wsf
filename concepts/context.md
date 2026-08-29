@@ -1,6 +1,6 @@
 # Context
 
-> **A semantic frame that qualifies the applicability, interpretation, and validity of concepts, relationships, and assertions — the situational boundaries of meaning.**
+> **A semantic frame that qualifies the applicability, interpretation, and validity of concepts, relationships, and assertions ; the situational boundaries of meaning.**
 
 ---
 
@@ -21,7 +21,7 @@ authority: WSF
 
 ## Definition
 
-A **Context** is a semantic frame that qualifies the applicability, interpretation, and validity of concepts, relationships, and assertions — the situational boundaries of meaning.
+A **Context** is a semantic frame that qualifies the applicability, interpretation, and validity of concepts, relationships, and assertions ; the situational boundaries of meaning.
 
 A Context is NOT:
 - A representation (contexts are semantic, not syntactic);
@@ -41,11 +41,11 @@ A Context IS:
 
 Context is foundational because:
 
-1. **Meaning depends on context** — the same term can mean different things in different contexts;
-2. **Assertions have context** — every assertion is made in a context;
-3. **Specialization creates contexts** — enterprise context, regulatory context, etc.;
-4. **Validation requires context** — assertions may be valid in some contexts but not others;
-5. **Integration requires shared contexts** — integration requires understanding contextual applicability.
+1. **Meaning depends on context** : the same term can mean different things in different contexts;
+2. **Assertions have context** : every assertion is made in a context;
+3. **Specialization creates contexts** : enterprise context, regulatory context, etc.;
+4. **Validation requires context** : assertions may be valid in some contexts but not others;
+5. **Integration requires shared contexts** : integration requires understanding contextual applicability.
 
 Without Context, the architecture cannot distinguish "Capability in general" from "Business Capability in enterprise context".
 
@@ -382,18 +382,18 @@ Contexts SHALL be validated for:
 
 ## Related Concepts
 
-- [Entity](./entity.md) — Things in contexts
-- [Concept](./concept.md) — Concepts in contexts
-- [Capability](./capability.md) — Capabilities specialized in contexts
-- [Assertion](./assertion.md) — Assertions made in contexts
+- [Entity](./entity.md) : Things in contexts
+- [Concept](./concept.md) : Concepts in contexts
+- [Capability](./capability.md) : Capabilities specialized in contexts
+- [Assertion](./assertion.md) : Assertions made in contexts
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-14 — Semantic Context & Boundary
-- ADR-WSF-09 — Foundational Concept Taxonomy
-- ADR-WSF-12 — Semantic Assertion Model
+- ADR-WSF-14 : Semantic Context & Boundary
+- ADR-WSF-09 : Foundational Concept Taxonomy
+- ADR-WSF-12 : Semantic Assertion Model
 
 ---
 

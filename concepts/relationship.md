@@ -42,11 +42,11 @@ A Relationship IS:
 
 Relationship is foundational because:
 
-1. **Assertions require relationships** — "OTCHERE possesses Capability" uses the possesses relationship.
-2. **Semantic graphs are made of relationships** — concepts relate to each other through relationships.
-3. **Specialization is a relationship** — Business Capability specializes Capability.
-4. **Temporal/causal/provenance connections are relationships** — events, causes, sources.
-5. **Cross-system integration requires shared relationship semantics** — relationships enable shared understanding.
+1. **Assertions require relationships** : "OTCHERE possesses Capability" uses the possesses relationship.
+2. **Semantic graphs are made of relationships** : concepts relate to each other through relationships.
+3. **Specialization is a relationship** : Business Capability specializes Capability.
+4. **Temporal/causal/provenance connections are relationships** : events, causes, sources.
+5. **Cross-system integration requires shared relationship semantics** : relationships enable shared understanding.
 
 Without Relationship as a foundational type, the architecture can only model structural connections, not semantic ones.
 
@@ -83,71 +83,71 @@ WSF distinguishes seven categories of Relationships (per ADR-WSF-19):
 Connect entities to entities by composition, containment, or instantiation.
 
 Examples:
-- `wsf-rel:has-part` — A has part B
-- `wsf-rel:is-part-of` — A is part of B (inverse of has-part)
-- `wsf-rel:contains` — A contains B
-- `wsf-rel:instantiates` — A is an instance of B
+- `wsf-rel:has-part` ; A has part B
+- `wsf-rel:is-part-of` ; A is part of B (inverse of has-part)
+- `wsf-rel:contains` ; A contains B
+- `wsf-rel:instantiates` ; A is an instance of B
 
 ### 2. Semantically Significant Relationships
 
 Connect entities/concepts with specific semantic meaning.
 
 Examples:
-- `wsf-rel:possesses` — Entity possesses Capability
-- `wsf-rel:has-capability` — Entity has Capability
-- `wsf-rel:assumes-role` — Entity assumes Role
-- `wsf-rel:realizes` — Activity realizes Outcome
-- `wsf-rel:enables` — X enables Y
-- `wsf-rel:produces` — Activity produces Outcome
-- `wsf-rel:governs` — Authority governs Artifact
-- `wsf-rel:specializes` — Concept specializes Concept
-- `wsf-rel:asserts` — Subject asserts Assertion
+- `wsf-rel:possesses` ; Entity possesses Capability
+- `wsf-rel:has-capability` ; Entity has Capability
+- `wsf-rel:assumes-role` ; Entity assumes Role
+- `wsf-rel:realizes` ; Activity realizes Outcome
+- `wsf-rel:enables` ; X enables Y
+- `wsf-rel:produces` ; Activity produces Outcome
+- `wsf-rel:governs` ; Authority governs Artifact
+- `wsf-rel:specializes` ; Concept specializes Concept
+- `wsf-rel:asserts` ; Subject asserts Assertion
 
 ### 3. Temporal Relationships
 
 Connect events, states, and intervals in time.
 
 Examples:
-- `wsf-rel:before` — Event A before Event B
-- `wsf-rel:after` — Event A after Event B
-- `wsf-rel:during` — Event during Interval
-- `wsf-rel:holds-during` — State holds during Interval
+- `wsf-rel:before` ; Event A before Event B
+- `wsf-rel:after` ; Event A after Event B
+- `wsf-rel:during` ; Event during Interval
+- `wsf-rel:holds-during` ; State holds during Interval
 
 ### 4. Causal Relationships
 
 Connect causes and effects.
 
 Examples:
-- `wsf-rel:causes` — X causes Y
-- `wsf-rel:triggers` — X triggers Y
-- `wsf-rel:contributes-to` — X contributes to Y
+- `wsf-rel:causes` ; X causes Y
+- `wsf-rel:triggers` ; X triggers Y
+- `wsf-rel:contributes-to` ; X contributes to Y
 
 ### 5. Normative Relationships
 
 Connect normative semantic elements (permissions, obligations, authorizations).
 
 Examples:
-- `wsf-rel:obligates` — Agreement obligates Party
-- `wsf-rel:authorizes` — Authority authorizes Action
-- `wsf-rel:permits` — Permit allows Action
-- `wsf-rel:prohibits` — Prohibition disallows Action
+- `wsf-rel:obligates` ; Agreement obligates Party
+- `wsf-rel:authorizes` ; Authority authorizes Action
+- `wsf-rel:permits` ; Permit allows Action
+- `wsf-rel:prohibits` ; Prohibition disallows Action
 
 ### 6. Provenance Relationships
 
 Connect semantic artifacts to their origins.
 
 Examples:
-- `wsf-rel:asserted-by` — Assertion asserted by Agent
-- `wsf-rel:derived-from` — Assertion derived from Source
-- `wsf-rel:supported-by` — Assertion supported by Evidence
+- `wsf-rel:asserted-by` ; Assertion asserted by Agent
+- `wsf-rel:derived-from` ; Assertion derived from Source
+- `wsf-rel:supported-by` ; Assertion supported by Evidence
 
 ### 7. Identity Relationships
 
 Connect identities.
 
 Examples:
-- `wsf-rel:same-as` — X is identical to Y
-- `wsf-rel:supersedes` — X supersedes Y
+- `wsf-rel:same-as` ; X is identical to Y
+- `wsf-rel:supersedes` ; X supersedes Y
 
 ---
 
@@ -368,21 +368,21 @@ Relationships MAY be deprecated without losing their historical meaning.
 
 ## Related Concepts
 
-- [Entity](./entity.md) — Things that participate in relationships
-- [Concept](./concept.md) — Abstract ideas related to each other
-- [Assertion](./assertion.md) — Uses relationships (per ADR-WSF-12)
-- [Identity](./identity.md) — Relationships have identity
-- [Capability](./capability.md) — Example of what is possessed
+- [Entity](./entity.md) : Things that participate in relationships
+- [Concept](./concept.md) : Abstract ideas related to each other
+- [Assertion](./assertion.md) : Uses relationships (per ADR-WSF-12)
+- [Identity](./identity.md) : Relationships have identity
+- [Capability](./capability.md) : Example of what is possessed
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-19 — Semantic Relationship Model (governs this concept)
-- ADR-WSF-04 — Semantic Inheritance (specializes relationships)
-- ADR-WSF-08 — Foundational Concept Relationships (initial relationship set)
-- ADR-WSF-12 — Semantic Assertion Model (relationships in assertions)
-- ADR-WSF-18 — Concept Identity (relationships have identity)
+- ADR-WSF-19 : Semantic Relationship Model (governs this concept)
+- ADR-WSF-04 : Semantic Inheritance (specializes relationships)
+- ADR-WSF-08 : Foundational Concept Relationships (initial relationship set)
+- ADR-WSF-12 : Semantic Assertion Model (relationships in assertions)
+- ADR-WSF-18 : Concept Identity (relationships have identity)
 
 ---
 

@@ -40,12 +40,12 @@ A State IS:
 
 State is foundational because:
 
-1. **Entities exist in states** — every persistent entity is in some state;
-2. **Change is the transition between states** — without states, no change is describable;
-3. **Process and workflow are sequences of states** — process = state_1 → state_2 → ... → state_n;
-4. **Status reporting is state assertion** — "system is operational" is a state claim;
-5. **Closed-loop systems operate on states** — observe state, decide, act, observe new state;
-6. **Digital twins capture state** — the "twin" mirrors the entity's state.
+1. **Entities exist in states** : every persistent entity is in some state;
+2. **Change is the transition between states** : without states, no change is describable;
+3. **Process and workflow are sequences of states** : process = state_1 → state_2 → ... → state_n;
+4. **Status reporting is state assertion** : "system is operational" is a state claim;
+5. **Closed-loop systems operate on states** : observe state, decide, act, observe new state;
+6. **Digital twins capture state** : the "twin" mirrors the entity's state.
 
 Without State, the architecture cannot model persistence or change.
 
@@ -425,19 +425,19 @@ Composite states combine sub-states into a unified condition.
 
 ## Related Concepts
 
-- [Entity](./entity.md) — Things that have states
-- [Event](./event.md) — Things that change states
-- [Disposition](./disposition.md) — Tendencies that may produce states
-- [Capability](./capability.md) — Dispositions affecting possible states
-- [Time](./time.md) — States hold in time
+- [Entity](./entity.md) : Things that have states
+- [Event](./event.md) : Things that change states
+- [Disposition](./disposition.md) : Tendencies that may produce states
+- [Capability](./capability.md) : Dispositions affecting possible states
+- [Time](./time.md) : States hold in time
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-09 — Foundational Concept Taxonomy
-- ADR-WSF-12 — Semantic Assertion Model (state assertions)
-- ADR-WSF-19 — Semantic Relationship Model (state relationships)
+- ADR-WSF-09 : Foundational Concept Taxonomy
+- ADR-WSF-12 : Semantic Assertion Model (state assertions)
+- ADR-WSF-19 : Semantic Relationship Model (state relationships)
 
 ---
 

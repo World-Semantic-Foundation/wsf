@@ -1,6 +1,6 @@
 # Event
 
-> **An occurrence in time — something that happens, occurs, or takes place at a specific point or interval.**
+> **An occurrence in time ; something that happens, occurs, or takes place at a specific point or interval.**
 
 ---
 
@@ -21,13 +21,13 @@ authority: WSF
 
 ## Definition
 
-An **Event** is an occurrence in time — something that happens, occurs, or takes place at a specific point or interval. Events are the foundation for representing change, action, and happening in semantic systems.
+An **Event** is an occurrence in time ; something that happens, occurs, or takes place at a specific point or interval. Events are the foundation for representing change, action, and happening in semantic systems.
 
 An Event is NOT:
 - A persistent entity (use Entity for things that persist);
 - A tendency or potential (use Disposition);
 - A state of affairs (use State);
-- An activity type (use Activity — but events are specific occurrences).
+- An activity type (use Activity : but events are specific occurrences).
 
 An Event IS:
 - Located in time;
@@ -42,12 +42,12 @@ An Event IS:
 
 Event is foundational because:
 
-1. **Change requires events** — something happens at a time;
-2. **History requires events** — past occurrences are events;
-3. **Causality involves events** — causes produce effects (which are events);
-4. **Actions are events** — agent actions are specific occurrences;
-5. **Processes are sequences of events** — structured change;
-6. **Provenance refers to events** — assertions are made at events (asserted-at).
+1. **Change requires events** : something happens at a time;
+2. **History requires events** : past occurrences are events;
+3. **Causality involves events** : causes produce effects (which are events);
+4. **Actions are events** : agent actions are specific occurrences;
+5. **Processes are sequences of events** : structured change;
+6. **Provenance refers to events** : assertions are made at events (asserted-at).
 
 Without Event, the architecture cannot model change, history, or occurrence.
 
@@ -456,21 +456,21 @@ Each transition is an event; each state is between events.
 
 ## Related Concepts
 
-- [Entity](./entity.md) — Things that participate in events
-- [State](./state.md) — Conditions held between events
-- [Disposition](./disposition.md) — Tendencies that manifest in events
-- [Capability](./capability.md) — Dispositions realized through events
-- [Time](./time.md) — Events occur in time
-- [Space](./space.md) — Events occur in space
+- [Entity](./entity.md) : Things that participate in events
+- [State](./state.md) : Conditions held between events
+- [Disposition](./disposition.md) : Tendencies that manifest in events
+- [Capability](./capability.md) : Dispositions realized through events
+- [Time](./time.md) : Events occur in time
+- [Space](./space.md) : Events occur in space
 
 ---
 
 ## Related ADRs
 
-- ADR-WSF-09 — Foundational Concept Taxonomy
-- ADR-WSF-12 — Semantic Assertion Model (events in assertions)
-- ADR-WSF-16 — Semantic Evolution & Versioning (event records)
-- ADR-WSF-19 — Semantic Relationship Model (event relationships)
+- ADR-WSF-09 : Foundational Concept Taxonomy
+- ADR-WSF-12 : Semantic Assertion Model (events in assertions)
+- ADR-WSF-16 : Semantic Evolution & Versioning (event records)
+- ADR-WSF-19 : Semantic Relationship Model (event relationships)
 
 ---
 
