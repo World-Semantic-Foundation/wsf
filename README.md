@@ -106,30 +106,32 @@ All examples use:
 
 This repository is being established per CR-WSF-17 Rev.1. Initial concept definitions are being authored under subsequent ADRs (ADR-WSF-18 through ADR-WSF-22).
 
-**Initial 12 Tier 1 Foundational Concepts** (all status: Proposed):
-1. Entity
-2. Concept
-3. Relationship
-4. Event
-5. State
-6. Disposition
-7. Proposition
-8. Assertion
-9. Identity
-10. Context
-11. Time
-12. Space
+**Initial 12 Tier 1 Foundational Concepts** (all status: Normative):
 
-**Initial 9 Tier 2 Supporting Constructs**:
-1. Identifier
-2. Reference
-3. Namespace
-4. Term
-5. Definition
-6. Validity
-7. Evidence
-8. Provenance
-9. Authority
+1. [Entity](./concepts/entity.md)
+2. [Concept](./concepts/concept.md)
+3. [Relationship](./concepts/relationship.md)
+4. [Event](./concepts/event.md)
+5. [State](./concepts/state.md)
+6. [Disposition](./concepts/disposition.md)
+7. [Proposition](./concepts/proposition.md)
+8. [Assertion](./concepts/assertion.md)
+9. [Identity](./concepts/identity.md)
+10. [Context](./concepts/context.md)
+11. [Time](./concepts/time.md)
+12. [Space](./concepts/space.md)
+
+**Initial 9 Tier 2 Supporting Constructs** (all status: Baseline):
+
+1. [Identifier](./concepts/identifier.md)
+2. [Reference](./concepts/reference.md)
+3. [Namespace](./concepts/namespace.md)
+4. [Term](./concepts/term.md)
+5. [Definition](./concepts/definition.md)
+6. [Validity](./concepts/validity.md)
+7. [Evidence](./concepts/evidence.md)
+8. [Provenance](./concepts/provenance.md)
+9. [Authority](./concepts/authority.md)
 
 ---
 
