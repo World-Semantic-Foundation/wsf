@@ -49,7 +49,7 @@ Event is foundational because:
 5. **Processes are sequences of events** — structured change;
 6. **Provenance refers to events** — assertions are made at events (asserted-at).
 
-Without Event, we cannot model change, history, or occurrence.
+Without Event, the architecture cannot model change, history, or occurrence.
 
 ---
 

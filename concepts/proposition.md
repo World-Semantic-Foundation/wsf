@@ -47,7 +47,7 @@ Proposition is foundational because:
 4. **Multiple agents can assert the same proposition** — shared content;
 5. **Propositions can be true independently of being asserted** — reality is independent of claims.
 
-Without Proposition, we cannot distinguish "what is asserted" from "the act of asserting".
+Without Proposition, the architecture cannot distinguish "what is asserted" from "the act of asserting".
 
 ---
 

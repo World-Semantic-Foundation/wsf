@@ -47,7 +47,7 @@ Context is foundational because:
 4. **Validation requires context** — assertions may be valid in some contexts but not others;
 5. **Integration requires shared contexts** — integration requires understanding contextual applicability.
 
-Without Context, we cannot distinguish "Capability in general" from "Business Capability in enterprise context".
+Without Context, the architecture cannot distinguish "Capability in general" from "Business Capability in enterprise context".
 
 ---
 

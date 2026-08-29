@@ -9,7 +9,7 @@
 ```yaml
 semantic_id: wsf:Entity
 preferred_name: Entity
-status: Proposed
+status: Baseline
 version: 0.1.0
 defined_by: ADR-WSF-17 (Foundational Semantic Architecture)
 classification: Foundational
@@ -184,4 +184,4 @@ An Entity is classified by a Concept. The Entity IS; the Concept CATEGORIZES.
 
 ---
 
-*Entity is a Tier 1 foundational concept. Status: Proposed.*
+*Entity is a Tier 1 foundational concept. Status: Baseline.*

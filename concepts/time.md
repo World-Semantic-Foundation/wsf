@@ -47,7 +47,7 @@ Time is foundational because:
 5. **History requires time** — without time, no record;
 6. **Process and workflow happen over time** — without time, no sequence.
 
-Without Time, we cannot model change, persistence, or history.
+Without Time, the architecture cannot model change, persistence, or history.
 
 ---
 

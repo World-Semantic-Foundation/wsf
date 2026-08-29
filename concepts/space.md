@@ -46,7 +46,7 @@ Space is foundational because:
 4. **Systems have spatial extent** — without space, no architecture;
 5. **Integration has spatial implications** — without space, no physical integration.
 
-Without Space, we cannot model location, arrangement, or geography.
+Without Space, the architecture cannot model location, arrangement, or geography.
 
 ---
 

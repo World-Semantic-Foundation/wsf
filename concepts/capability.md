@@ -9,7 +9,7 @@
 ```yaml
 semantic_id: wsf:Capability
 preferred_name: Capability
-status: Proposed
+status: Baseline
 version: 0.1.0
 defined_by: ADR-WSF-07 (Capacity–Ability–Capability)
 classification: Derived (Tier 3)
@@ -210,4 +210,4 @@ Specialization must preserve Capability semantics (per ADR-WSF-04 — Semantic I
 
 ---
 
-*Capability is a Tier 3 derived concept grounded in Disposition (Tier 1). Status: Proposed.*
+*Capability is a Tier 3 derived concept grounded in Disposition (Tier 1). Status: Baseline.*

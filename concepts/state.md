@@ -47,7 +47,7 @@ State is foundational because:
 5. **Closed-loop systems operate on states** — observe state, decide, act, observe new state;
 6. **Digital twins capture state** — the "twin" mirrors the entity's state.
 
-Without State, we cannot model persistence or change.
+Without State, the architecture cannot model persistence or change.
 
 ---
 

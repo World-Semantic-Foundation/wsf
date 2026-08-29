@@ -48,7 +48,7 @@ Relationship is foundational because:
 4. **Temporal/causal/provenance connections are relationships** — events, causes, sources.
 5. **Cross-system integration requires shared relationship semantics** — relationships enable shared understanding.
 
-Without Relationship as a foundational type, we can only model structural connections, not semantic ones.
+Without Relationship as a foundational type, the architecture can only model structural connections, not semantic ones.
 
 ---
 

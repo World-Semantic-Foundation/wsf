@@ -50,7 +50,7 @@ Assertion is foundational because:
 5. **Trust is assessed on assertions** — trust is per-assertion;
 6. **Conflicts are detected between assertions** — multiple assertions can be compared.
 
-Without Assertion, we cannot attribute, validate, or trust semantic claims.
+Without Assertion, the architecture cannot attribute, validate, or trust semantic claims.
 
 ---
 
@@ -134,7 +134,7 @@ Proposed → Active → Confirmed | Disputed | Rejected | Expired | Superseded |
 
 | State | Meaning | Governance |
 |---|---|---|
-| **Proposed** | Newly asserted | Awaiting review |
+| **Proposed** | Newly asserted | Initial state — not yet confirmed |
 | **Active** | Currently in force | Valid in current context |
 | **Confirmed** | Independently verified | Has confirming evidence |
 | **Disputed** | Contested | Has contradicting evidence |

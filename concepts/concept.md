@@ -65,7 +65,7 @@ Concept is foundational because:
 3. **Definitions describe concepts** — a definition defines what a concept means.
 4. **Cross-system reference requires shared concepts** — integration requires shared concept identity.
 
-Without Concept as a foundational type, we cannot talk about meaning, only about data structures.
+Without Concept as a foundational type, the architecture cannot talk about meaning, only about data structures.
 
 ---
 
