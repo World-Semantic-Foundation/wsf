@@ -131,6 +131,16 @@ This is a semantic **REALIZATION** chain, not inheritance. Capability is grounde
       - Financial Planning Business Capability
 ```
 
+**Federation status (2026-08-31):** this specialization is now normative on the
+OpenDEA side. dea-metamodel ADR-015 adopted the WSF shape: an abstract
+`dea:Capability` root aligned 1:1 with `wsf:Capability`, with
+`dea:BusinessCapability` as a specialization and sibling kinds
+(`dea:SystemCapability`, `dea:InfrastructureCapability`,
+`dea:AIAugmentedCapability`) in profiles. The declared mapping, with explicit
+confidence/lossiness, lives at `mappings/wsf/mapping.yaml` in
+[technehub-labs/dea-metamodel](https://github.com/technehub-labs/dea-metamodel)
+(CR-016).
+
 ### Capability vs Actual Event
 
 ```
