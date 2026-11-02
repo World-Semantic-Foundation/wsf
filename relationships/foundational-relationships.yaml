@@ -1,0 +1,378 @@
+# WSF Foundational Relationship Registry
+# Per ADR-WSF-19 (Semantic Relationship Model) §4 and §12
+# Machine-readable registry of the initial governed relationship set.
+# Status values: Candidate | Investigating | Proposed | Normative | Deprecated | Retired
+# Naming: snake_case keys; wsf-rel: CURIEs per ADR-WSF-21
+
+registry_version: 0.1.0
+authority: WSF
+defined_by: ADR-WSF-19
+last_reviewed: 2026-09-28
+
+forms:
+  - semantic_id: wsf-rel-form:Structural
+    preferred_name: Structural
+  - semantic_id: wsf-rel-form:Temporal
+    preferred_name: Temporal
+  - semantic_id: wsf-rel-form:Causal
+    preferred_name: Causal
+  - semantic_id: wsf-rel-form:Dispositional
+    preferred_name: Dispositional
+
+families:
+  - semantic_id: wsf-rel-family:Identity
+    preferred_name: Identity
+  - semantic_id: wsf-rel-family:Possession
+    preferred_name: Possession
+  - semantic_id: wsf-rel-family:Participation
+    preferred_name: Participation
+  - semantic_id: wsf-rel-family:Realization
+    preferred_name: Realization
+  - semantic_id: wsf-rel-family:Enablement
+    preferred_name: Enablement
+  - semantic_id: wsf-rel-family:Provision
+    preferred_name: Provision
+  - semantic_id: wsf-rel-family:Constraint
+    preferred_name: Constraint
+  - semantic_id: wsf-rel-family:Measurement
+    preferred_name: Measurement
+  - semantic_id: wsf-rel-family:Causality
+    preferred_name: Causality
+  - semantic_id: wsf-rel-family:Context
+    preferred_name: Context
+
+relationships:
+  # Structural
+  - semantic_id: wsf-rel:has-part
+    preferred_name: has part
+    form: wsf-rel-form:Structural
+    family: wsf-rel-family:Provision
+    definition: Entity composition; the subject is composed of the object.
+    domain: wsf:Entity
+    range: wsf:Entity
+    properties: { symmetric: false, transitive: true, antisymmetric: true, functional: false }
+    inverse: wsf-rel:is-part-of
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:is-part-of
+    preferred_name: is part of
+    form: wsf-rel-form:Structural
+    family: wsf-rel-family:Provision
+    definition: Entity decomposition; the subject is a part of the object.
+    domain: wsf:Entity
+    range: wsf:Entity
+    properties: { symmetric: false, transitive: true, antisymmetric: true, functional: false }
+    inverse: wsf-rel:has-part
+    cardinality: N:1
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:contains
+    preferred_name: contains
+    form: wsf-rel-form:Structural
+    family: wsf-rel-family:Provision
+    definition: Containment; the subject contains the object.
+    domain: wsf:Entity
+    range: wsf:Entity
+    properties: { symmetric: false, transitive: true, antisymmetric: false, functional: false }
+    inverse: wsf-rel:is-contained-in
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:instantiates
+    preferred_name: instantiates
+    form: wsf-rel-form:Structural
+    family: wsf-rel-family:Realization
+    definition: Instance-of; the subject is an instance of the object concept.
+    domain: wsf:Entity
+    range: wsf:Concept
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: true }
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  # Semantically Significant
+  - semantic_id: wsf-rel:possesses
+    preferred_name: possesses
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Possession
+    definition: The subject possesses the capability, disposition, or property.
+    domain: wsf:Entity
+    range: wsf:Disposition
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:has-capability
+    preferred_name: has capability
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Possession
+    definition: The subject has the capability.
+    domain: wsf:Entity
+    range: wsf:Capability
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    specialization_of: wsf-rel:possesses
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:assumes-role
+    preferred_name: assumes role
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Participation
+    definition: The subject assumes the role within a context.
+    domain: wsf:Entity
+    range: wsf:Role
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: 1:N
+    context_applicability: [enterprise-context, organisational-context]
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:realizes
+    preferred_name: realizes
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Realization
+    definition: The activity realizes the outcome.
+    domain: wsf:Activity
+    range: wsf:Outcome
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:produces
+    preferred_name: produces
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Realization
+    definition: The activity or process produces the outcome.
+    domain: wsf:Process
+    range: wsf:Outcome
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:enables
+    preferred_name: enables
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Enablement
+    definition: The subject enables the object; the object is possible because of the subject.
+    domain: wsf:Entity
+    range: wsf:Entity
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:specializes
+    preferred_name: specializes
+    form: wsf-rel-form:Structural
+    family: wsf-rel-family:Identity
+    definition: The subject concept specializes the object concept.
+    domain: wsf:Concept
+    range: wsf:Concept
+    properties: { symmetric: false, transitive: true, antisymmetric: true, functional: false }
+    cardinality: N:1
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:governs
+    preferred_name: governs
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Constraint
+    definition: The authority governs the artifact.
+    domain: wsf:Authority
+    range: wsf:Entity
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: 1:N
+    context_applicability: [enterprise-context, regulatory-context]
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:asserts
+    preferred_name: asserts
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Participation
+    definition: The subject agent asserts the assertion.
+    domain: wsf:Actor
+    range: wsf:Assertion
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  # Temporal
+  - semantic_id: wsf-rel:before
+    preferred_name: before
+    form: wsf-rel-form:Temporal
+    family: wsf-rel-family:Context
+    definition: Event A occurs before event B.
+    domain: wsf:Event
+    range: wsf:Event
+    properties: { symmetric: false, transitive: true, antisymmetric: false, functional: false }
+    inverse: wsf-rel:after
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:after
+    preferred_name: after
+    form: wsf-rel-form:Temporal
+    family: wsf-rel-family:Context
+    definition: Event A occurs after event B.
+    domain: wsf:Event
+    range: wsf:Event
+    properties: { symmetric: false, transitive: true, antisymmetric: false, functional: false }
+    inverse: wsf-rel:before
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:during
+    preferred_name: during
+    form: wsf-rel-form:Temporal
+    family: wsf-rel-family:Context
+    definition: The event occurs during the interval.
+    domain: wsf:Event
+    range: wsf:Time
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:holds-during
+    preferred_name: holds during
+    form: wsf-rel-form:Temporal
+    family: wsf-rel-family:Context
+    definition: The state holds during the interval.
+    domain: wsf:State
+    range: wsf:Time
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  # Causal
+  - semantic_id: wsf-rel:causes
+    preferred_name: causes
+    form: wsf-rel-form:Causal
+    family: wsf-rel-family:Causality
+    definition: The subject causes the object effect.
+    domain: wsf:Event
+    range: wsf:Event
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:triggers
+    preferred_name: triggers
+    form: wsf-rel-form:Causal
+    family: wsf-rel-family:Causality
+    definition: The subject triggers the object.
+    domain: wsf:Event
+    range: wsf:Process
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:contributes-to
+    preferred_name: contributes to
+    form: wsf-rel-form:Causal
+    family: wsf-rel-family:Causality
+    definition: The subject contributes to the outcome; non-deterministic.
+    domain: wsf:Event
+    range: wsf:Outcome
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  # Normative
+  - semantic_id: wsf-rel:obligates
+    preferred_name: obligates
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Constraint
+    definition: The agreement obligates the party.
+    domain: wsf:Policy
+    range: wsf:Actor
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:authorizes
+    preferred_name: authorizes
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Constraint
+    definition: The authority authorizes the action.
+    domain: wsf:Authority
+    range: wsf:Process
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:permits
+    preferred_name: permits
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Constraint
+    definition: The permit allows the action.
+    domain: wsf:Rule
+    range: wsf:Process
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:prohibits
+    preferred_name: prohibits
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Constraint
+    definition: The prohibition disallows the action.
+    domain: wsf:Rule
+    range: wsf:Process
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  # Provenance
+  - semantic_id: wsf-rel:asserted-by
+    preferred_name: asserted by
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Participation
+    definition: The assertion is asserted by the agent.
+    domain: wsf:Assertion
+    range: wsf:Actor
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: true }
+    cardinality: N:1
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:derived-from
+    preferred_name: derived from
+    form: wsf-rel-form:Structural
+    family: wsf-rel-family:Identity
+    definition: The assertion is derived from the source; carries a derivation chain.
+    domain: wsf:Assertion
+    range: wsf:Assertion
+    properties: { symmetric: false, transitive: true, antisymmetric: false, functional: false }
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:supported-by
+    preferred_name: supported by
+    form: wsf-rel-form:Dispositional
+    family: wsf-rel-family:Measurement
+    definition: The assertion is supported by the evidence.
+    domain: wsf:Assertion
+    range: wsf:Evidence
+    properties: { symmetric: false, transitive: false, antisymmetric: false, functional: false }
+    cardinality: 1:N
+    status: Normative
+    version: 0.1.0
+  # Identity
+  - semantic_id: wsf-rel:same-as
+    preferred_name: same as
+    form: wsf-rel-form:Structural
+    family: wsf-rel-family:Identity
+    definition: The subject is identical to the object.
+    domain: wsf:Entity
+    range: wsf:Entity
+    properties: { symmetric: true, transitive: true, antisymmetric: false, functional: false }
+    cardinality: N:M
+    status: Normative
+    version: 0.1.0
+  - semantic_id: wsf-rel:supersedes
+    preferred_name: supersedes
+    form: wsf-rel-form:Structural
+    family: wsf-rel-family:Identity
+    definition: The subject supersedes the object.
+    domain: wsf:Entity
+    range: wsf:Entity
+    properties: { symmetric: false, transitive: true, antisymmetric: true, functional: false }
+    cardinality: N:1
+    status: Normative
+    version: 0.1.0

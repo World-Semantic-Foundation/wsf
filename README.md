@@ -39,29 +39,43 @@ The 12 Tier 1 foundational concepts and 9 Tier 2 supporting constructs. Each con
 
 ### `relationships/` ; Foundational Relationships
 
+Materialised in [relationships/](./relationships/README.md) : the 4 Forms of Relation (Structural / Temporal / Causal / Dispositional), the 10 relationship families, the foundational relationship set (29 governed relationships per ADR-WSF-19 §12), and the machine-readable registry.
+
 The 4 Forms of Relation (Structural / Temporal / Causal / Dispositional) plus the 10 relationship families (Identity, Possession, Participation, Realization, Enablement, Provision, Constraint, Measurement, Causality, Context).
 
 ### `identity/` ; Identity/Reference/Representation
+
+Materialised in [identity/](./identity/README.md) : the 5 distinctions (Identity, Identifier, Name, Reference, Representation), the 4-component Concept Identity Model, the identifier scheme and CURIE rules, and the identity lifecycle.
 
 Distinguishes Identity, Identifier, Name, Reference, Representation. Implements the 5 distinctions from Investigation 6.
 
 ### `assertions/` ; Semantic Assertion Model
 
-The Subject + Relationship + Object + Context + Time + Space + Condition + Evidence + Provenance + Trust pattern. See ADR-WSF-12.
+Materialised in [assertions/](./assertions/README.md) : the assertion pattern, required and optional qualifiers, the 8-state assertion lifecycle, and machine-readable canonical examples.
+
+The Subject + Relationship + Object + Context + Time + Space + Condition + Evidence + Provenance + Trust pattern. See ADR-WSF-22 (Assertion and Provenance Model).
 
 ### `context/` ; Context as Semantic Qualification
+
+Materialised in [context/](./context/README.md) : the context applicability model, the initial context set, and context validation rules.
 
 Context qualifies meaning, applicability, interpretation ; not a generic metadata container.
 
 ### `temporal/` ; Time Semantics
 
+Materialised in [temporal/](./temporal/README.md) : Instant/Interval/Duration primitives, Precedence ≠ Causality, and Temporal Validity ≠ Lifecycle.
+
 Instant, Interval, Duration. Precedence ≠ Causality. Temporal Validity ≠ Lifecycle.
 
 ### `spatial/` ; Space Semantics
 
+Materialised in [spatial/](./spatial/README.md) : Location/Position/Region primitives, Position ≠ Location, and spatial containment semantics.
+
 Location, Position, Spatial Region. Position ≠ Location.
 
 ### `provenance/` ; Evidence, Provenance, Authority, Trust
+
+Materialised in [provenance/](./provenance/README.md) : the 4 epistemic qualifiers, provenance and evidence structures, trust assessment, and the Semantic Authority Chain.
 
 The 4 epistemic qualifiers for assertions.
 
@@ -104,7 +118,7 @@ All examples use:
 
 ## Current Status
 
-This repository is being established per CR-WSF-17 Rev.1. Initial concept definitions are being authored under subsequent ADRs (ADR-WSF-18 through ADR-WSF-22).
+This repository is being established per CR-WSF-17 Rev.1. Concept definitions are complete for Tier 1, Tier 2, and Tier 3. The seven foundational modules (`relationships/`, `identity/`, `assertions/`, `context/`, `temporal/`, `spatial/`, `provenance/`) are materialised under ADR-WSF-17 through ADR-WSF-22.
 
 **Initial 12 Tier 1 Foundational Concepts** (all status: Normative):
 
