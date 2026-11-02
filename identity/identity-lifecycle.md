@@ -99,4 +99,4 @@ Per ADR-WSF-18 §14:
 - [Identity Model](./identity-model.md)
 - [Identifier Scheme](./identifier-scheme.md)
 - ADR-WSF-18, ADR-WSF-16
-- [Semantic Status Model](../../wsf-governance/GOVERNANCE/SEMANTIC-STATUS-MODEL.md)
+- Semantic Status Model (see wsf-governance/GOVERNANCE/SEMANTIC-STATUS-MODEL.md in the wsf-governance repository)

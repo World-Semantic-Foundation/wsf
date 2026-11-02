@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install YAML tooling
+        run: pip install pyyaml
+
+      - name: Validate machine-readable YAML artifacts
+        run: |
+          python3 - <<'EOF'
+          import glob
+          import yaml
+
+          files = (
+              glob.glob("concepts/**/*.yaml", recursive=True)
+              + glob.glob("relationships/**/*.yaml", recursive=True)
+              + glob.glob("assertions/**/*.yaml", recursive=True)
+              + glob.glob("identity/**/*.yaml", recursive=True)
+              + glob.glob("context/**/*.yaml", recursive=True)
+              + glob.glob("temporal/**/*.yaml", recursive=True)
+              + glob.glob("spatial/**/*.yaml", recursive=True)
+              + glob.glob("provenance/**/*.yaml", recursive=True)
+          )
+          if not files:
+              raise SystemExit("No machine-readable YAML artifacts found")
+          for f in files:
+              with open(f) as fh:
+                  yaml.safe_load(fh)
+              print(f"OK: {f}")
+          print(f"Validated {len(files)} YAML artifacts")
+          EOF
+
+      - name: Check internal markdown links
+        run: |
+          python3 - <<'EOF'
+          import os
+          import re
+          import sys
+
+          link_re = re.compile(r"\]\((\.\.?/[^)#]+)(#[^)]*)?\)")
+          failures = []
+          for root, _dirs, files in os.walk("."):
+              if ".git" in root:
+                  continue
+              for name in files:
+                  if not name.endswith(".md"):
+                      continue
+                  path = os.path.join(root, name)
+                  with open(path, encoding="utf-8") as fh:
+                      content = fh.read()
+                  for match in link_re.finditer(content):
+                      target = match.group(1)
+                      resolved = os.path.normpath(os.path.join(os.path.dirname(path), target))
+                      # Links to sibling repositories (../../wsf-governance/ etc.) are
+                      # intentional cross-repo references in the org context; skip them.
+                      if resolved.startswith(".."):
+                          continue
+                      if not os.path.exists(resolved):
+                          failures.append(f"{path}: broken link -> {target}")
+          if failures:
+              for f in failures:
+                  print(f)
+              sys.exit(1)
+          print("All internal markdown links resolve")
+          EOF
