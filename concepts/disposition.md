@@ -468,8 +468,8 @@ The digital twin captures the entity's dispositions.
 - [Capability](./capability.md) : A specialized disposition
 - [Role](./role.md) : A relational disposition (forthcoming)
 - [Function](./function.md) : An intended-purpose disposition (forthcoming)
-- [Capacity](./capacity.md) : The "how much" disposition
-- [Ability](./ability.md) : The "can do" disposition
+- Capacity : The "how much" disposition (forthcoming concept)
+- Ability : The "can do" disposition (forthcoming concept)
 - [State](./state.md) : Actual condition (distinct from disposition)
 
 ---

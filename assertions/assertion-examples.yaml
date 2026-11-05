@@ -1,0 +1,82 @@
+# WSF Assertion Canonical Examples
+# Machine-readable examples of the Semantic Assertion Pattern (ADR-WSF-22)
+# All examples use the canonical domain: OTCHERE Inc (enterprise), Kwesi (individual), OTCHERE DC-01 (system).
+
+examples:
+  # Structural assertion
+  - semantic_id: wsf-assertion:OTCHERE-has-part-OMD-001
+    subject: wsf-ex:OTCHERE-Inc
+    relationship: wsf-rel:has-part
+    object: wsf-ex:Order-Management-Department
+    context: wsf-ctx:enterprise-architecture
+    provenance:
+      asserted_by: wsf-ex:Kwesi
+      asserted_at: 2026-08-29
+      source: OTCHERE Inc organisation chart
+    status: Active
+    version: 0.1.0
+
+  # Dispositional assertion with time and evidence
+  - semantic_id: wsf-assertion:OTCHERE-possesses-OMC-001
+    subject: wsf-ex:OTCHERE-Inc
+    relationship: wsf-rel:possesses
+    object: wsf-ex:OrderManagementCapability
+    context: wsf-ctx:enterprise-architecture
+    time:
+      valid_from: 2026-01-01
+      valid_to: null
+    evidence:
+      - wsf-evidence:capability-model-2026
+    provenance:
+      asserted_by: wsf-ex:Kwesi
+      asserted_at: 2026-08-29
+    status: Confirmed
+    version: 0.1.0
+
+  # Causal assertion with conditions
+  - semantic_id: wsf-assertion:cooling-failure-causes-disruption-001
+    subject: wsf-ex:Cooling-Failure-Event-2026
+    relationship: wsf-rel:causes
+    object: wsf-ex:Service-Disruption-Event-2026
+    context: wsf-ctx:operations
+    time:
+      valid_from: 2026-06-15
+      valid_to: 2026-06-15
+    conditions:
+      - "No redundant cooling active"
+    evidence:
+      - wsf-evidence:DC01-incident-report-2026-06
+    provenance:
+      asserted_by: wsf-ex:Kwesi
+      asserted_at: 2026-06-20
+    status: Active
+    version: 0.1.0
+
+  # Normative assertion
+  - semantic_id: wsf-assertion:retention-policy-obligates-OTCHERE-001
+    subject: wsf-ex:Data-Retention-Policy
+    relationship: wsf-rel:obligates
+    object: wsf-ex:OTCHERE-Inc
+    context: wsf-ctx:regulatory
+    conditions:
+      - "Scope: customer records"
+      - "Retention period: seven years"
+    provenance:
+      asserted_by: wsf-ex:OTCHERE-Compliance
+      asserted_at: 2026-02-01
+      authority: wsf-ex:OTCHERE-Legal
+    status: Confirmed
+    version: 0.1.0
+
+  # Identity assertion
+  - semantic_id: wsf-assertion:OTCHERE-same-as-reorg-001
+    subject: wsf-ex:OTCHERE-Inc
+    relationship: wsf-rel:same-as
+    object: wsf-ex:OTCHERE-Inc-2025
+    context: wsf-ctx:enterprise-architecture
+    provenance:
+      asserted_by: wsf-ex:Kwesi
+      asserted_at: 2026-01-15
+      method: "identity persistence through compatible reorganisation"
+    status: Confirmed
+    version: 0.1.0
