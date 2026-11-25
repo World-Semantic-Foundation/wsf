@@ -147,7 +147,7 @@ This repository is being established per CR-WSF-17 Rev.1. Concept definitions ar
 8. [Provenance](./concepts/provenance.md)
 9. [Authority](./concepts/authority.md)
 
-**Initial 16 Tier 3 Specialisation Concepts** (all status: Baseline):
+**Tier 3 Specialisation Concepts** (all status: Baseline):
 
 1. [Role](./concepts/role.md)
 2. [Process](./concepts/process.md)
@@ -165,6 +165,7 @@ This repository is being established per CR-WSF-17 Rev.1. Concept definitions ar
 14. [Objective](./concepts/objective.md)
 15. [Measure](./concepts/measure.md)
 16. [Actor](./concepts/actor.md)
+17. [Product](./concepts/product.md) : Tier 3 specialisation grounded in Function (per ADR-WSF-36)
 
 **Tier 3 Worked Example**:
 
